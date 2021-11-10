@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-gray: #fafafa;
+    --color-light-blue: #2997FF;
+    --color-dark-blue: #273483;
+    --grow-hover: { 
+        transform: scale(1.5);
+        color: var(--color-light-blue);
+    };
+
+}
+
+body{
+    font-family: 'heebo', sans-serif;
+}
+
+p{
+    font-size: 14px;
+}
+
+.center-itm{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* SEARCH VIEW */
+.fade-enter-active, .fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+.buscador{
+    background-color: rgba(255, 255, 255, 0.89);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    display: none;
+}
+
+.buscador-itms{
+    margin-top: 15%;
+    width:fit-content;
+}
+#searchQueryInput {
+    width: 500px;
+    height: 3.5rem;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--color-light-blue);
+    font-size: 2rem;
+    
+}
+
+.buscador input:active{
+    border-bottom: 1px black;
+    background: violet;
+}
+
+
+
+  
+#searchQuerySubmit {
+    height: 3.5rem;
+    margin:0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    
+    font-size: 2rem;
+}
+  
+#searchQuerySubmit:hover {
+    cursor: pointer;
+}
+
+input[type="search"]{
+    text-align: center;
+    font-weight: lighter;
+}
+
+/* END SEARCH VIEW */
+/* SEARCH BUTTON */
+
+.lupa{
+    width: 3.5rem;
+    height: 2.8rem;
+    background: none;
+    border: none;
+    outline: none;
+    /* margin-top: 5px; */
+    transition: all .2s ease-in-out;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    color: var(--color-dark-blue)
+}
+
+.lupa:hover{
+    transform: scale(1.5);
+    color: var(--color-light-blue);
+}
+
+/* END SEARCH BUTTON */
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width:200px; 
+}
+/* NAV MENU */
+li {
+    display: inline;
+}
+
+.navMenu {
+    background: #f5f5f7;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.navMenu ul {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    overflow: hidden;
+    list-style: none;
+}
+
+.navMenu li {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    height: fit-content;
+    
+}
+  
+.navMenu a {
+    text-decoration: none;
+    display: block;
+    color: rgb(0, 0, 0);
+    transition: all .2s ease-in-out;
+}
+  
+.navMenu a:hover {
+    transform: scale(1.2);
+    color: var(--color-light-blue);
+}
+ul.topnav{
+    margin-bottom: 0;
+}
+/* LOGIN */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 160px;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    border-radius: 15px;
+}
+  
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+
+
+.dropdown button{
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    transition: all .2s ease-in-out;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    color: var(--color-dark-blue)
+}
+
+.dropdown button i{
+    display: inline-block;
+}
+
+
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .slideshow-container .active , .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  .fade:not(.show) {
+    opacity: 100;
+}
+
+.banner{
+    border-radius: 20px;
+}
+
+
+
+.demo {
+    width: calc(100% / 3);
+  
+}
+@media screen and (min-width:1024px) {
+  .demo {
+    width: calc(100% / 4);
+    padding: 3em 0;
+  }
+}
+
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: .8em 4em;
+    border: 2px solid #333;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+  }
+  .button::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    background: #333;
+    transition: transform .3s;
+  }
+  .button:hover {
+    color: #fff;
+  }
+
+  
+.button01::before {
+    transform-origin: right top;
+    transform: scale(0, 1);
+  }
+  .button01:hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+  }
+
+
+  .span-tgl {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transition: all .5s ease;
+  }
+  .span2 {
+    top: 10px;
+  }
+  .span3 {
+    top: 15px;
+  }
+
+
+  .btn {
+    position:fixed;
+    width:40px;
+    height:26px;
+  /*   border: 1px solid #fff; */
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1000;
+  }
