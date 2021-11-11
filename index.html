@@ -28,135 +28,116 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,400,500,600,700,800,900">
 </head>
 <body>
-    <!-- SEARCH VIEW -->
-        <div class="buscador">
+  <!-- SEARCH VIEW -->
+  <div class="buscador">
     
-            <button v-on:click= "" class="close">
-                 <i class="bi bi-x-lg"></i>
-            </button>
+    <button v-on:click= "" class="close">
+      <i class="bi bi-x-lg"></i>
+    </button>
         
-            <div class="center-itm buscador-itms">
-                    
-                <input id="searchQueryInput" type="search" name="searchQueryInput" placeholder="Buscar por producto / Código ID" value="" />
-                <br>
-                <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit" class="#">
-                       Buscar
-                </button>
-             </div>
-        </div>
-
-    <!-- SEARCH VIEW -->
-
-    <header>
-        
-        <div class="container">
-            <div class="row">
-
-                <!-- SEARCH BUTTON -->
-                <div class="col-lg-4 col-md-4 col-3" id="btnSearch">
-
-                    <button class="lupa">
-                        <i class="bi bi-search"></i>
-                    </button>
-                    
-                </div>
-                
-                <!-- END SEARCH BUTTON -->
-
-                <!-- LOGO -->
-                <div class="col-lg-4 col-md-4 col-6">
-                    <div class="center-itm logo">
-                        <a :href="url" target="_blank"><img :src="logoLessox"></a>
-                    </div>
-                </div>
-                <!-- END LOGO -->
-
-                <!-- LOGIN -->
-                <div class="dropdown col-lg-4 col-md-4 col-3">
-                    <button class="dropbtn"><i class="bi bi-person-lines-fill"></i></button>
-                    <div class="dropdown-content">
-                      <a href="https://www.lessox.cl/webv2/carro_login.php?carro_login=1">Registrarme</a>
-                      <a href="https://www.lessox.cl/webv2/carro_login.php?ingreso=1&inicio=1">Iniciar Sesión</a>
-                    </div>
-                </div>
-                <!-- END LOGIN -->
-        
-            </div>
-
-        <div>
-    </header>
-    
-    
-
-    <!-- NAVBAR -->
-    <div class="container-fluid">
-        <div class="navMenu">
-                
-            <ul class="topnav d-none d-md-block ">
-                <li><a class="active border-right" href="#home">Inicio</a></li>
-                <li><a class="border-right" href="#news ">Dispensadores</a></li>
-                <li><a class="border-right" href="#contact">Insumos</a></li>
-                <li class="right"><a href="#about">Contacto</a></li>
-            </ul>
-
-            <!-- Menu toggle -->
-            <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <b>Menú</b><span class="navbar-light navbar-toggler-icon" style="z-index: 999"> </span>
-            </button>
-  
-  
-              <div class="collapse navbar-collapse abs" id="navbarSupportedContent" style="z-index: 999">
-  
-                <ul class="navbar-nav mr-auto">
-  
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                  </li>
-  
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Dispensadores</a>
-                  </li>
-  
-                  <li class="nav-item dropdown">
-  
-                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Insumos
-                    </a>
-  
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Inicio</a>
-                      <a class="dropdown-item" href="#">Dispensadores</a>
-                      <a class="dropdown-item" href="#">Su</a>
-                    </div>
-  
-                  </li>
-  
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html"></i>Contacto</a>
-                  </li>
-  
-                </ul>
-              </div> <!-- End menu toggle -->
-    
-        </div>
-        
+    <div class="center-itm buscador-itms">    
+      <input id="searchQueryInput" type="search" name="searchQueryInput" placeholder="Buscar por producto / Código ID" value="" />
+      <br>
+      <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit" class="#">Buscar</button>
     </div>
 
+  </div>
 
+  <!-- SEARCH VIEW -->
+  <header>       
+    <div class="container">
+      <div class="row">
 
-    <!-- Slideshow container -->
-<div class="slideshow-container">
+        <!-- SEARCH BUTTON -->
+       <div class="col-lg-4 col-md-4 col-3" id="btnSearch">
+          <button class="lupa">
+            <i class="bi bi-search"></i>
+          </button>    
+        </div>
+        <!-- END SEARCH BUTTON -->
 
-    <!-- Full-width images with number and caption text -->
+        <!-- LOGO -->
+        <div class="col-lg-4 col-md-4 col-6">
+          <div class="center-itm logo">
+            <a :href="url" target="_blank"><img :src="logoLessox"></a>
+          </div>
+        </div>
+        <!-- END LOGO -->
+
+        <!-- LOGIN -->
+          <div class="dropdown col-lg-4 col-md-4 col-3">
+            <button class="dropbtn"><i class="bi bi-person-lines-fill"></i></button>
+            <div class="dropdown-content">
+              <a href="https://www.lessox.cl/webv2/carro_login.php?carro_login=1"><b>Registrarme</b></a>
+              <a href="https://www.lessox.cl/webv2/carro_login.php?ingreso=1&inicio=1">Iniciar Sesión</a>
+            </div>
+          </div>
+        <!-- END LOGIN -->
+        
+      </div>
+    <div>
+  </header>
+    
+  <!-- NAVBAR -->
+  <div class="container-fluid">
+    <div class="navMenu">
+                
+      <ul class="topnav d-none d-md-block ">
+        <li><a class="active border-right" href="#home">Inicio</a></li>
+        <li><a class="border-right" href="#news ">Dispensadores</a></li>
+        <li><a class="border-right" href="#contact">Insumos</a></li>
+        <li class="right"><a href="#about">Contacto</a></li>
+      </ul>
+
+      <!-- Menu toggle -->
+      <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <b>Menú</b><span class="navbar-light navbar-toggler-icon" style="z-index: 999"> </span>
+      </button>
+  
+      <div class="collapse navbar-collapse abs text-center" id="navbarSupportedContent" style="z-index: 999">
+  
+        <ul class="navbar-nav mr-auto">
+  
+          <li class="nav-item active">
+           <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Dispensadores</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Insumos
+            </a>
+  
+            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Inicio</a>
+              <a class="dropdown-item" href="#">Dispensadores</a>
+              <a class="dropdown-item" href="#">Su</a>
+            </div>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"></i>Contacto</a>
+          </li>
+  
+        </ul>
+      </div> <!-- End menu toggle -->
+    </div>
+  </div>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
     <div class="mySlides fade">
       <img src="./images/awa-banner.png" style="width:100%" class="banner">
-      <!-- <div class="text">Caption Text</div> -->
     </div>
-  
+    
     <div class="mySlides fade">
-      <img src="./images/img2.jpg" style="width:100%">
+      <img src="./images/awa-banner.png" style="width:100%" class="banner">
     </div>
-  
+    
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -167,6 +148,86 @@
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
   </div>
+
+  <div class="section-container border-section-container pt-40">
+    <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 text-center">
+
+                    <div class="fa-container">
+                      <i class="bi bi-truck"></i>
+                    </div>
+          
+                    <div>
+                        <p>Envíos a todo Chile a la
+                          dirección de tu preferencia</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+
+                    <div class="fa-container">
+                      <i class="bi bi-shop-window"></i>
+                    </div>
+      
+                    <div>
+                        <p>Elíge retiro en tienda si
+                          eres de la Región Metropolitana
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="fa-container">
+                      <i class="bi bi-shield-check"></i>
+                    </div>
+          
+                    <div>
+                        <p>Te ofrecemos seguridad
+                          y calidad en todos nuestros productos 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 ">
+                  <a href="#" >
+                    <div id="menu-tile" >
+                      <span>Dispensadores</span>
+                    </div>
+                  </a>      
+                </div>
+          
+                <div class="col-6 ">
+                
+                  <a href="#">
+                    <div id="specials-tile"><span>Insumos</span></div>
+                  </a>  
+          
+                </div>
+          
+
+
+            </div>
+      </div>
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
    

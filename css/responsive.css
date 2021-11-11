@@ -1,13 +1,22 @@
 /****Large devices only****/
 
 @media (min-width: 1200px) {
-
+    .slideshow-container{
+        padding: 30px 0px 0 0px;
+    }
    
 }
 
 
 /****Medium devices only****/
 @media (min-width: 992px) and (max-width: 1199px) {
+    .slideshow-container{
+        padding: 10px 20px 0 20px;
+    }
+
+    .next {
+        margin-right: 20px;
+    }
     
     
 
@@ -38,5 +47,13 @@
     .buscador-itms{
         width: 100%;
         margin-top: 50%;
+    }
+
+    .slideshow-container{
+        padding: 10px 20px 0 20px;
+    }
+
+    .next {
+        margin-right: 20px;
     }
  }
