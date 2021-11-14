@@ -15,7 +15,8 @@
 /****Medium devices only****/
 @media (min-width: 992px) and (max-width: 1199px) {
     .slideshow-container{
-        padding: 10px 20px 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .next {
@@ -45,7 +46,7 @@
 
     .login{
         margin-top: 10px;
-        padding-right: 20px;
+        padding-right: 30px;
     }
 
     .btnLupa{

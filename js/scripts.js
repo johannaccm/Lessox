@@ -26,6 +26,16 @@ var logo = new Vue({
 
 })
 
+var carrousel = new Vue({
+  el: '.myslides',
+  data: {
+      img1: './images/awa.png',
+      url: '#',
+  },
+
+})
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
