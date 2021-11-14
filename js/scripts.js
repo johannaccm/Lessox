@@ -21,7 +21,7 @@ var logo = new Vue({
     el: '.logo',
     data: {
         logoLessox: './images/lessox-logo.png',
-        url: 'https://compratucelu.cl/',
+        url: '#',
     },
 
 })
@@ -55,17 +55,13 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-$(function () { 
+// $(function () { 
 
-    $(".navbar-toggler").blur(function (event) {
-      var screenWidth = window.innerWidth;
-      if (screenWidth < 768) {
-        $(".navbar-collapse").collapse('hide');
-      }
-    });
-});
+//     $(".navbar-toggler").blur(function (event) {
+//       var screenWidth = window.innerWidth;
+//       if (screenWidth < 768) {
+//         $(".navbar-collapse").collapse('hide');
+//       }
+//     });
+// });
 
-$("#toggle").click(function() {
-  $(this).toggleClass("on");
-  $("#menu").slideToggle();
-});

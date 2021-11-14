@@ -15,7 +15,6 @@
     <link rel="shortcut icon" href="./images/lessox.ico" type="image/x-icon">
 
     <!-- All  CSS -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -28,6 +27,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,400,500,600,700,800,900">
 </head>
 <body>
+
   <!-- SEARCH VIEW -->
   <div class="buscador">
     
@@ -43,14 +43,12 @@
 
   </div>
 
-  <!-- SEARCH VIEW -->
+
   <header>       
     <div class="container">
       <div class="row">
 
         <!-- SEARCH BUTTON -->
-        
-
        <div class="col-lg-4 col-md-4 col-2" id="btnSearch">
 
         <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +59,7 @@
           </div>
         </button>
 
-          <button class="lupa d-none d-sm-block">
+          <button class="lupa">
             <i class="bi bi-search"></i>
           </button>    
         </div>
@@ -76,17 +74,23 @@
         <!-- END LOGO -->
 
         <!-- LOGIN -->
-          <div class="dropdown col-lg-4 col-md-4 col-4">
+        <div class="col-lg-4 col-md-4 col-4 login">
+
+          <div class="dropdown ">
             <button class="dropbtn"><i class="bi bi-person-lines-fill"></i></button>
-            <div class="dropdown-content">
-              <a href="https://www.lessox.cl/webv2/carro_login.php?carro_login=1"><b>Registrarme</b></a>
-              <a href="https://www.lessox.cl/webv2/carro_login.php?ingreso=1&inicio=1">Iniciar Sesión</a>
+              <div class="dropdown-content">
+                <a href="https://www.lessox.cl/webv2/carro_login.php?carro_login=1"><b>Registrarme</b></a>
+                <a href="https://www.lessox.cl/webv2/carro_login.php?ingreso=1&inicio=1">Iniciar Sesión</a>
+              </div>
             </div>
 
-            <button class="lupa d-none d-block d-sm-none">
+          <div class="btnLupa">
+            <button class="lupa ">
               <i class="bi bi-search"></i>
             </button>
           </div>
+
+        </div>
         <!-- END LOGIN -->
         
       </div>
@@ -105,9 +109,7 @@
       </ul>
 
       <!-- Menu toggle -->
-      <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <b>Menú</b><span class="navbar-light navbar-toggler-icon" style="z-index: 999"> </span>
-      </button>
+      
   
       <div class="collapse navbar-collapse abs text-center" id="navbarSupportedContent" style="z-index: 999">
   
@@ -166,118 +168,116 @@
 
   <div class="slideshow-container border-section-container pt-40">
     <div class="container">
-            <div class="row">
+      <div class="row">
 
-                <div class="col-md-4 text-center envios">
+        <div class="col-md-4 text-center envios">
+          <div class="fa-container">
+            <i class="bi bi-truck"></i>
+          </div>
+          <div>
+            <p>Envíos a todo Chile a la dirección de tu preferencia</p>
+          </div>
+        </div>
 
-                    <div class="fa-container">
-                      <i class="bi bi-truck"></i>
-                    </div>
-          
-                    <div>
-                        <p>Envíos a todo Chile a la
-                          dirección de tu preferencia</p>
-                    </div>
-                </div>
+        <div class="col-md-4 text-center retiro">
+          <div class="fa-container">
+            <i class="bi bi-shop-window"></i>
+          </div>
+          <div>
+            <p>Elíge retiro en tienda si eres de la Región Metropolitana</p>
+          </div>
+        </div>
 
-                <div class="col-md-4 text-center retiro">
+        <div class="col-md-4 text-center seguridad">
+          <div class="fa-container">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <div>
+            <p>Te ofrecemos seguridad y calidad en todos nuestros productos</p>
+          </div>
+        </div>
 
-                    <div class="fa-container">
-                      <i class="bi bi-shop-window"></i>
-                    </div>
-      
-                    <div>
-                        <p>Elíge retiro en tienda si
-                          eres de la Región Metropolitana
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="col-md-4 text-center seguridad">
-                    <div class="fa-container">
-                      <i class="bi bi-shield-check"></i>
-                    </div>
-          
-                    <div>
-                        <p>Te ofrecemos seguridad
-                          y calidad en todos nuestros productos 
-                        </p>
-                    </div>
-                </div>
-
-                <div class=" col-md-6 col-12 ">
-                  <a href="#" >
-                    <div id="menu-tile" >
-                      <span>Dispensadores</span>
-                    </div>
-                  </a>      
-                </div>
-          
-                <div class="col-md-6 col-12 ">
-                
-                  <a href="#">
-                    <div id="specials-tile"><span>Insumos</span></div>
-                  </a>  
-          
-                </div>
-          
-
-
-            </div>
       </div>
+
+      <div class="row pt-40"> 
+
+        <div class=" col-md-6 col-12 ">
+          <a href="#" >
+            <div id="menu-tile">
+              <span>Dispensadores</span>
+            </div>
+          </a>      
+        </div>
+          
+        <div class="col-md-6 col-12 ">
+          <a href="#">
+            <div id="specials-tile"><span>Insumos</span></div>
+          </a>  
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <footer id="footer">
-    <div class="container">
-        <div class="row">
 
-            <div class="col-lg-4 col-md-4 info-ctc">
-                <p>
-                    En <b>CompraTuCelu</b> amamos cuidar el planeta y por eso elegimos darle una segunda vida a la tecnología. Gracias a esto, contribuimos a reducir los desechos electrónicos que contaminan nuestro entorno.
-                </p>
-                <i class="bi bi-facebook mr-x-2"></i>
-                <i class="bi bi-instagram mr-x-2"></i>
-                <i class="bi bi-whatsapp mr-x-2"></i>
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-                <img id="sello-ccs" src="http://compratucelu.cl/wp-content/uploads/2020/10/ccs2.png" alt="Sello CCS">
-                
-            </div>
-
-            <div class="col-lg-4 col-md-4 politicas">
-
-                <ul>
-                    <li>
-                        <p> <i class="bi bi-caret-right-fill"></i>Política de garantía</p>
-                    </li>
-
-                    <li>
-                        <p> <i class="bi bi-caret-right-fill"></i>Política de privacidad</p>
-                    </li>
-
-                    <li>
-                        <p><i class="bi bi-caret-right-fill"></i>Política de cookies</p>
-                    </li>
-
-                    <li>
-                        <p><i class="bi bi-caret-right-fill"></i>Términos y condiciones</p>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="info-ssl">
-                <p>Por tu seguridad, recuerda revisar siempre en tu navegador que el sitio que visitas sea la versión oficial. La dirección https://compratucelu.cl es la única del sitio oficial.</p>
-            </div>
-
-            <div class="info-empresa">
-                <p> Comercial Agriplast SPA,  Av. nueva providencia 2212, local 118, providencia, región metropolitana. © 2021 All rights reserved compratucelu</p>
-            </div>
-
-
+  <footer>
+    <div class="container pt-40">
+      <div class="row">
+        <div class="col-12">
+          <img src="./images/lessox-logo.png" width="150px">
         </div>
+
+        <div class="col-lg-4 col-md-4 info-ctc">
+          <p>Venta de insumos y productos relacionados a la venta de agua purificada </p>
+          <i class="bi bi-facebook mr-x-2"></i>
+          <i class="bi bi-instagram mr-x-2"></i>
+          <i class="bi bi-whatsapp mr-x-2"></i>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <h5> Información</h5>
+          <ul>
+
+            <li>
+              <a href="#"><p><i class="bi bi-chevron-right"></i>Quienes somos</p></a>
+            </li>
+
+            <li>
+              <a href="#"><p><i class="bi bi-chevron-right"></i>Tienda</p></a>
+            </li>
+
+            <li>
+              <a href="#"><p><i class="bi bi-chevron-right"></i>Términos y condiciones</p></a>
+            </li>
+          </ul>    
+        </div>
+
+        <div class="col-lg-4 col-md-4 politicas">
+          <h5> Contacto</h5>
+          <p>Para dudas o consultas puedes contactarnos a través de:</p>
+          <ul>
+            <li>
+              <p><i class="bi bi-telephone-fill"></i>+56 2 2973 9447 </p>
+            </li>
+
+            <li>
+              <p><i class="bi bi-envelope-fill"></i>ventas@lessox.cl</p>
+            </li>
+
+          </ul> 
+        </div>
+       
+        <div class="info-ssl col-12">
+          <hr>
+          <p>© All Rights Reserved Lessox 2021 </p>
+        </div>
+
+        <div class="info-empresa col-12">
+          <p> Diseño front-end elaborado por Johanna Caraballo</p>
+        </div>
+
+
+      </div>
     </div>
 </footer>
   
@@ -301,7 +301,6 @@
    
     
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="./js/scripts.js"></script>

@@ -35,9 +35,30 @@
 
  /****Extra Small devices only****/
  @media (max-width: 767px) {
+
+    #btnSearch{
+        margin-top: 10px;
+    }
+
+    .login{
+        margin-top: 10px;
+        padding-right: 20px;
+    }
+
+    .btnLupa{
+        display: inline;
+    }
+
+    #btnSearch .lupa{
+        display: none;
+    }
+
+    .btnLupa{
+        display: inline;
+    }
  
     .logo img{
-        width:100%;
+        width:170px;
         padding-top: 10px; 
     }
 
