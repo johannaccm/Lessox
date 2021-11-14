@@ -1,17 +1,15 @@
-
-
 $(function () {
-$(".lupa").click(function() {
-    $(".buscador").show("fast");
-});
+  $(".lupa").click(function() {
+      $(".buscador").show("fast");
+  });
 
-$(".close").click(function(){
-    $(".buscador").hide("fast");
-});
+  $(".close").click(function(){
+      $(".buscador").hide("fast");
+  });
 
-$(".dropdown").hover(function(){ 
-    $(this).find(".dropdown-content").toggle(); 
-});
+  $(".dropdown").hover(function(){ 
+      $(this).find(".dropdown-content").toggle(); 
+  });
 
 })
 
@@ -65,13 +63,33 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-$(function () { 
+// $(function () { 
 
-    $(".navbar-toggler").blur(function (event) {
-      var screenWidth = window.innerWidth;
-      if (screenWidth < 768) {
-        $(".navbar-collapse").collapse('hide');
-      }
-    });
-});
+//     $(".navbar-toggler").blur(function (event) {
+//       var screenWidth = window.innerWidth;
+//       if (screenWidth < 768) {
+//         $(".navbar-collapse").collapse('hide');
+//       }
+//     });
+// });
 
+$(".navbar-toggler").click(function(){
+  
+  function mostrar(){
+    $(".one").css({
+      background: 'black',
+    })
+  }
+
+  mostrar()
+
+  function ocultar(){
+    $(".one").css({
+      background: 'red',
+    })
+  }
+
+  ocultar()
+
+
+})
