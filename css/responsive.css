@@ -35,6 +35,9 @@
 
  /****Extra Small devices only****/
  @media (max-width: 767px) {
+    #menu-tile, #specials-tile, #map-tile {
+        height: 150px;
+    }
 
     #btnSearch{
         margin-top: 10px;
