@@ -11,6 +11,7 @@ $(function () {
       $(this).find(".dropdown-content").toggle(); 
   });
 
+
 })
 
 
@@ -73,23 +74,7 @@ function showSlides(n) {
 //     });
 // });
 
-$(".navbar-toggler").click(function(){
-  
-  function mostrar(){
-    $(".one").css({
-      background: 'black',
-    })
-  }
 
-  mostrar()
-
-  function ocultar(){
-    $(".one").css({
-      background: 'red',
-    })
-  }
-
-  ocultar()
-
-
+$(".closeX").click(function(){
+  $(".lessox").hide("fast");
 })

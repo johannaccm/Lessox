@@ -6,10 +6,27 @@
     --color-gray: #f5f5f7;
     --color-light-blue: #2997FF;
     --color-dark-blue: #273483;
-    --grow-hover: { 
-        transform: scale(1.5);
-        color: var(--color-light-blue);
-    };
+    --color-lessox: #FFA300;
+
+}
+
+
+.lessox{
+  text-align: left;
+  background: var(--color-lessox);
+  padding: 10px 0 10px 20px;
+}
+
+.closeX{
+  float:right;
+  padding-right: 20px;
+  padding-top: 5px;
+  color: var(--white)
+}
+
+.lessox a{
+  color: var(--white);
+  text-decoration: none;
 
 }
 

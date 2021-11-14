@@ -32,10 +32,16 @@
 
     
     
+    
 }
 
  /****Extra Small devices only****/
  @media (max-width: 767px) {
+
+    .logo{
+        text-align: left;
+    }
+    
     #menu-tile, #specials-tile, #map-tile {
         height: 150px;
     }
