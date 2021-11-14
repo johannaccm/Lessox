@@ -146,6 +146,13 @@ li {
     display: inline;
 }
 
+.navbar-collapse{
+  position: absolute;
+  width:100%;
+  background: var(--color-gray);
+  padding: 20px 0;
+}
+
 .navMenu {
     background: var(--color-gray);
     width: 100%;

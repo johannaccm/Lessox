@@ -55,13 +55,13 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// $(function () { 
+$(function () { 
 
-//     $(".navbar-toggler").blur(function (event) {
-//       var screenWidth = window.innerWidth;
-//       if (screenWidth < 768) {
-//         $(".navbar-collapse").collapse('hide');
-//       }
-//     });
-// });
+    $(".navbar-toggler").blur(function (event) {
+      var screenWidth = window.innerWidth;
+      if (screenWidth < 768) {
+        $(".navbar-collapse").collapse('hide');
+      }
+    });
+});
 
