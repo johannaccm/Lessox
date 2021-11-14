@@ -478,7 +478,7 @@ ul.topnav{
 #menu-tile {
     background-image: url('../images/cat-1.png');
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
 }
 
 #specials-tile {
@@ -571,4 +571,12 @@ footer .infoJC{
   text-align: center;
   font-size: 12px;
   color: #8b8b8b;
+}
+
+.categorias{
+  padding: 0px;
+}
+
+.categorias div{
+  padding: 0;
 }

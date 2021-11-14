@@ -20,7 +20,7 @@
     }
 
     .next {
-        margin-right: 20px;
+        margin-right: 10px;
     }
     
     
@@ -41,7 +41,7 @@
     .logo{
         text-align: left;
     }
-    
+
     #menu-tile, #specials-tile, #map-tile {
         height: 150px;
     }
@@ -89,6 +89,6 @@
     }
 
     .next {
-        margin-right: 20px;
+        margin-right: 10px;
     }
  }
