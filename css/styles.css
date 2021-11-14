@@ -231,7 +231,7 @@ ul.topnav{
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1140px;
+    max-width: 1000px;
     position: relative;
     margin: auto;
     padding-top: 30px;
@@ -455,4 +455,43 @@ ul.topnav{
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.288);
     color: #fff;
+}
+
+#toggle {
+  width: 28px;
+  height: 30px;
+  margin: 10px auto;
+}
+
+#toggle div {
+  width: 100%;
+  height: 3px;
+  background: var(--color-dark-blue);
+  border-radius: 100px;
+  margin: 4px auto;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+#toggle.on .one {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on .two {
+  opacity: 0;
+}
+
+#toggle.on .three {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+header button{
+  padding: 0;
+}
+
+.envios,.retiro,.seguridad{
+  transition: all .2s ease-in-out;
+}
+.envios:hover,.retiro:hover,.seguridad:hover{
+  transform: scale(1.1);
 }
