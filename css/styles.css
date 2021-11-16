@@ -601,6 +601,10 @@ footer .infoJC{
   padding: 0;
 }
 
+footer li a{
+  color:black;
+}
+
 /* SELECTOR SITES */
 .selector{
   margin:0;
