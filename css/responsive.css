@@ -39,13 +39,20 @@
  /****Small devices only****/
 @media (min-width: 768px) and (max-width: 991px) {
 
-    
+    .full-screen{
+        min-height: 50vh;
+    }
     
     
 }
 
  /****Extra Small devices only****/
  @media (max-width: 767px) {
+
+    .full-screen{
+        min-height: 50vh;
+    }
+    
 
     .logo{
         text-align: left;
