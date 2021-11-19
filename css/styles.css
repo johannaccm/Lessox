@@ -189,6 +189,10 @@ li {
   padding: 20px 0;
 }
 
+.navbar-nav>.nav-item>.nav-link{
+  color:var(--color-dark-blue);
+}
+
 .navMenu {
     background: var(--color-gray);
     width: 100%;
@@ -607,81 +611,35 @@ footer li a{
 
 /* SELECTOR SITES */
 .selector{
-  margin:0;
-  padding:0;
+  background: var(--color-gray);
 }
 
 .selector .container{
-  padding:0;
+  min-height: 85vh;
+  max-height: 85vh;
+  padding-top: 80px;
+}
+
+.lessox-btn{
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.lessox-btn h5{
+  font-weight: 200;
   margin: 0;
-  max-width: 100%;
-  width: 100%;
-  min-height: 100vh;
 }
 
-.selector .row{
-  width:100%;
-  margin:0;
-  box-sizing: hidden;
-}
-.lessoxWeb{
-  background: var(--color-light-blue);
-  opacity: 0.6;
-  backdrop-filter: blur(60px);
-  height: 100vh;
-  position: relative;
+.lessox-home-btn{
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-.lessoxHomeWeb{
-  background: var(--color-lessox);
-  opacity: 0.3;
-  backdrop-filter: blur(60px);
-  height: 100vh;
-  position: relative;
+.lessox-home-btn h5{
+  font-weight: 200;
+  margin: 0;
 }
-
-
-.lessoxWebImg{
-  background-image: url('../images/water.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity:0.4;
-  filter: blur(2px);
-  width:100%;
-  height: 100%;
-  transition: all .2s ease-in-out;
-  
-}
-.lessoxWeb:hover{
-  opacity: 0.4;
-}
-.lessoxWebImg:hover{
-    transform: scale(1.1);
-}
-.full-screen {
-  min-height: 100vh;
-  padding:0;
-  overflow: hidden;
-}
-
-.infoLessoxWeb{
-  position: absolute;
-  z-index: 999;
-}
-
-
-.lessoxHomeWebImg{
-  background-image: url('../images/lessoxHome.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity:0.3;
-  filter: blur(2px);
-  width:100%;
-  height: 100%;
-  transition: all .2s ease-in-out;
-
-}
-
-
