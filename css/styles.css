@@ -187,6 +187,7 @@ li {
   width:100%;
   background: var(--color-gray);
   padding: 20px 0;
+  box-shadow: 0 1px 10px 1px #2d2d2d1f;
 }
 
 .navbar-nav>.nav-item>.nav-link{
@@ -620,11 +621,28 @@ footer li a{
   padding-top: 80px;
 }
 
+.selector h1{
+  font-weight: bolder;
+}
+
+.selector a{
+  color: var(--black);
+  text-decoration: none;
+}
+
 .lessox-btn{
   border: 1px solid rgb(199, 199, 199);
   border-radius: 20px;
   padding: 20px;
   text-align: center;
+  width: 60%;
+  margin-left: auto;
+  transition: all .2s ease-in-out;
+  margin-top: 20px;
+}
+
+.lessox-btn:hover{
+  transform: scale(1.1);
 }
 
 .lessox-btn h5{
@@ -637,9 +655,55 @@ footer li a{
   border-radius: 20px;
   padding: 20px;
   text-align: center;
+  width: 60%;
+  margin-right: auto;
+  transition: all .2s ease-in-out;
+  margin-top: 20px;
+}
+
+.lessox-home-btn:hover{
+  transform: scale(1.1);
 }
 
 .lessox-home-btn h5{
   font-weight: 200;
   margin: 0;
 }
+
+.slide-up{
+  animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+  
+@keyframes slide-up{
+  0%{
+    transform: translateY(100px)}
+  100%{
+    transform: translateY(0)}
+
+}
+
+.slide-up2{
+  animation: slide-up2 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation-delay: 1s;
+}
+  
+@keyframes slide-up2{
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+
+.lessox-btn>img{
+  height: 75px;
+}
+
+.lessox-home-btn>img{
+  height: 75px;
+}
+  

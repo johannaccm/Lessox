@@ -31,6 +31,12 @@
     .lessox{
         display: none;
     }
+
+    .selector .container{
+        min-height: 80vh;
+        max-height: 80vh;
+        padding-top: 60px;
+    }
     
     
 
@@ -41,6 +47,16 @@
 
     .full-screen{
         min-height: 50vh;
+    }
+
+    .lessox-btn{
+        width: 80%;
+        margin-right: auto;
+    }
+
+    .lessox-home-btn{
+        width: 80%;
+        margin-left: auto;
     }
     
     
@@ -106,5 +122,33 @@
 
     .next {
         margin-right: 10px;
+    }
+
+    .selector .container{
+        min-height: 85vh;
+        max-height: 85vh;
+        padding-top: 40px;
+    }
+
+    .lessox-btn{
+        width: 80%;
+        margin-right: auto;
+    }
+
+    .lessox-home-btn{
+        width: 80%;
+        margin-left: auto;
+    }
+
+    .selector h1{
+        font-size: 25px;
+    }
+
+    .selector h5{
+        font-size: 14px;
+    }
+
+    .selector-logos{
+        height: 60px;
     }
  }

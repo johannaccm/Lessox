@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
 
     <!-- All  Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,400,500,600,700,800,900">
@@ -32,23 +30,28 @@
 
 
     <div class="text-center">
-      <img src="./images/hola.png" alt="Hola-lessox" width="180px">
-      <h1 class="pt-2">¿Qué sitio te gustaría visitar <br>el día de hoy?</h1>
+      <div clas="slide-up"><img  src="./images/hola.png" alt="Hola-lessox" width="180px"></div>
+      <h1 class="slide-up pt-2">¿Qué sitio te gustaría visitar <br>el día de hoy?</h1>
     </div>
 
     <div class="row">
-      <div class="col-lg-6 col-12 ">
-        <div class="lessox-btn">
-          <img src="./images/lessox-btn.png" alt="Lessox" height="75px">
-          <h5 class="pt-3">Todo en <br>agua purificada</h5>
-        </div>
+
+      <div class="col-lg-6 col-12 slide-up2 ">
+        <a href="#">
+          <div class="lessox-btn ">
+            <img src="./images/lessox-btn.png" alt="Lessox" class="selector-logos">
+            <h5 class="pt-3">Todo en <br>agua purificada</h5>
+          </div>
+        </a>
       </div>
 
-      <div class="col-lg-6 col-12 ">
-        <div class="lessox-home-btn">
-          <img src="./images/lessox-home-btn.png" alt="Lessox" height="75px">
-          <h5 class="pt-3">Muebles para <br>tu hogar</h5>
-        </div>
+      <div class="col-lg-6 col-12 slide-up2 ">
+        <a href="#">
+          <div class="lessox-home-btn p">
+            <img src="./images/lessox-home-btn.png" alt="Lessox" class="selector-logos">
+            <h5 class="pt-3">Muebles para <br>tu hogar</h5>
+          </div>
+        </a>
       </div>
 
 
@@ -63,5 +66,4 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="./js/scripts.js"></script>
 </body>

@@ -64,17 +64,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// $(function () { 
-
-//     $(".navbar-toggler").blur(function (event) {
-//       var screenWidth = window.innerWidth;
-//       if (screenWidth < 768) {
-//         $(".navbar-collapse").collapse('hide');
-//       }
-//     });
-// });
-
-
 $(".closeX").click(function(){
   $(".lessox").hide("fast");
 })
