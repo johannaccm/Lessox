@@ -41,8 +41,15 @@
 
 .lessox{
   text-align: left;
-  background: var(--color-lessox);
-  padding: 10px 0 10px 20px;
+  background-image: url('../images/banner-lessox-home.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lessox-envelope{
+  padding: 5px 0 5px 20px;
+  background: linear-gradient(0.25turn, #ffa100, #ffbf61);
+  backdrop-filter: blur(1px);
 }
 
 .closeX{
@@ -588,8 +595,9 @@ footer ul{
   padding:0;
 }
 
-footer .copyright{
+.selector .copyright{
   text-align: center;
+  padding-top: 70px;
 }
 
 footer .infoJC{
@@ -632,12 +640,13 @@ footer li a{
 
 .lessox-btn{
   border: 1px solid rgb(199, 199, 199);
-  border-radius: 20px;
   padding: 20px;
   text-align: center;
   width: 60%;
   margin-left: auto;
-  transition: all .2s ease-in-out;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
   margin-top: 20px;
 }
 
@@ -652,12 +661,13 @@ footer li a{
 
 .lessox-home-btn{
   border: 1px solid rgb(199, 199, 199);
-  border-radius: 20px;
   padding: 20px;
   text-align: center;
   width: 60%;
   margin-right: auto;
-  transition: all .2s ease-in-out;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
   margin-top: 20px;
 }
 
@@ -706,4 +716,97 @@ footer li a{
 .lessox-home-btn>img{
   height: 75px;
 }
-  
+
+.btn-border-1::after,
+.btn-border-1::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+}
+
+.btn-border-1::after {
+    bottom: -3px;
+    right: -3px;
+    border-left: 3px solid var(--color-lessox);
+    border-bottom: 3px solid var(--color-lessox);
+    transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+}
+
+.btn-border-1::before {
+    top: 0px;
+    left: 0px;
+    border-top: 3px solid var(--color-lessox);
+    border-right: 3px solid var(--color-lessox);
+    transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+}
+
+.btn-border-1:hover {
+    animation: pulse 1s ease-out .4s;
+    color: #222222;
+}
+
+.btn-border-1:hover::after,
+.btn-border-1:hover::before {
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    visibility: visible;
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn-border-1:hover::after {
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn-border-1:hover::before {
+    transition: width .1s ease, height .1s ease .1s;
+}
+
+/* BORDER LESSOX */
+
+.btn-border-2::after,
+.btn-border-2::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+}
+
+.btn-border-2::after {
+    bottom: -3px;
+    right: -3px;
+    border-left: 3px solid var(--color-dark-blue);
+    border-bottom: 3px solid var(--color-dark-blue);
+    transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+}
+
+.btn-border-2::before {
+    top: 0px;
+    left: 0px;
+    border-top: 3px solid var(--color-dark-blue);
+    border-right: 3px solid var(--color-dark-blue);
+    transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+}
+
+.btn-border-2:hover {
+    animation: pulse 1s ease-out .4s;
+    color: #222222;
+}
+
+.btn-border-2:hover::after,
+.btn-border-2:hover::before {
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    visibility: visible;
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn-border-2:hover::after {
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn-border-2:hover::before {
+    transition: width .1s ease, height .1s ease .1s;
+}

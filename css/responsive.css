@@ -10,7 +10,7 @@
     }
 
     .lessox{
-        display: none;
+        text-align: center;
     }
     
    
@@ -28,9 +28,7 @@
         margin-right: 10px;
     }
 
-    .lessox{
-        display: none;
-    }
+    
 
     .selector .container{
         min-height: 80vh;
