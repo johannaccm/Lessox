@@ -622,6 +622,10 @@ footer ul{
   padding:0;
 }
 
+.copyright p{
+  text-align: center;
+}
+
 .selector .copyright{
   text-align: center;
   position: fixed;
