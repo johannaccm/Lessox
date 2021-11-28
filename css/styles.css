@@ -620,7 +620,9 @@ footer ul{
 
 .selector .copyright{
   text-align: center;
-  padding-top: 70px;
+  position: fixed;
+  bottom:0;
+  left:0;
 }
 
 footer .infoJC{
@@ -649,7 +651,7 @@ footer li a{
 .selector .container{
   min-height: 85vh;
   max-height: 85vh;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .selector h1{
@@ -663,7 +665,7 @@ footer li a{
 
 .lessox-btn{
   border: 1px solid rgb(199, 199, 199);
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   width: 60%;
   margin-left: auto;
@@ -672,19 +674,22 @@ footer li a{
   -moz-transition: ease-out 0.5s;
   margin-top: 20px;
 }
+.lessox-btn>img{
+  width:100%;
+}
+
+.lessox-home-btn>img{
+  width: 100%;
+}
 
 .lessox-btn:hover{
   transform: scale(1.1);
 }
 
-.lessox-btn h5{
-  font-weight: 200;
-  margin: 0;
-}
 
 .lessox-home-btn{
   border: 1px solid rgb(199, 199, 199);
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   width: 60%;
   margin-right: auto;
@@ -698,10 +703,6 @@ footer li a{
   transform: scale(1.1);
 }
 
-.lessox-home-btn h5{
-  font-weight: 200;
-  margin: 0;
-}
 
 .slide-up{
   animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
@@ -730,14 +731,6 @@ footer li a{
     opacity: 1;
   }
 
-}
-
-.lessox-btn>img{
-  height: 75px;
-}
-
-.lessox-home-btn>img{
-  height: 75px;
 }
 
 .btn-border-1::after,
