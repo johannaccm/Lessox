@@ -65,5 +65,18 @@ function showSlides(n) {
 }
 
 $(".closeX").click(function(){
-  $(".lessox").hide("fast");
+  $(".right-col").hide("fast");
 })
+
+const rightBanner = document.getElementById("right-banner");
+const eOffset = rightBanner.offsetTop;
+
+window.onscroll = () => onSticky(rightBanner, eOffset);
+
+function onSticky(e, eOffset) {
+  if (window.pageYOffset > eOffset) {
+    e.classList.add("sticky");
+  } else {
+    e.classList.remove("sticky");
+  }
+}

@@ -56,6 +56,14 @@
         width: 80%;
         margin-left: auto;
     }
+
+    .right-col {
+        width:100%;
+    }
+
+    .sticky{
+        width: 100%;
+    }
     
     
 }
@@ -148,5 +156,13 @@
 
     .selector-logos{
         height: 60px;
+    }
+
+    .right-col {
+        width:100%;
+    }
+
+    .sticky{
+        width: 100%;
     }
  }
